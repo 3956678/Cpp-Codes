@@ -35,7 +35,7 @@ int linearselection(vector<int> a,int left,int right,int k){
     swap(a[pivotindex],a[right]);
     int rank=pivotindex-left+1;
     if(k==rank)
-      return a[pivotindex];
+        return a[pivotindex];
     else if(k<rank)
        return linearselection(a,left,pivotindex-1,k);
     else
