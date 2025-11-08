@@ -30,6 +30,7 @@ bool solve(vector<vector<int>> &b,int r,int n){
         if(safe(b,r,c,n)){
             b[r][c]=1;
             solve(b,r+1,n);
+            //return true;
             b[r][c]=0;
         }
     }
